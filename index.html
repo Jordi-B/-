@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <div id="calculator">
+
+    <div class="calculate-section">
+      <h1 id="output"></h1>
+    </div>
+
+    <div class="input-section">
+      <input type="text" name="inputArea" value="0" disabled>
+    </div>
+
+    <div class="buttton-section">
+      <div class="numbers">
+        <div class="first-row">
+          <input class="number btn" type="button" name="9" value="9" />
+          <input class="number btn" type="button" name="8" value="8" />
+          <input class="number btn" type="button" name="7" value="7" />
+        </div>
+        <div class="second-row">
+          <input class="number btn" type="button" name="6" value="6" />
+          <input class="number btn" type="button" name="5" value="5" />
+          <input class="number btn" type="button" name="4" value="4" />
+        </div>
+        <div class="third-row">
+          <input class="number btn" type="button" name="3" value="3" />
+          <input class="number btn" type="button" name="2" value="2" />
+          <input class="number btn" type="button" name="1" value="1" />
+        </div>
+        <div class="fourth-row">
+          <input class="number zero btn" type="button" name="0" value="0" />
+          <input class="number dot btn" type="button" name="." value="." />
+        </div>
+      </div>
+      <div class="operators">
+        <div class="first-row">
+          <input class="operator btn" type="button" name="Backspace" value="<-" />
+          <input class="operator btn" type="button" name="clear" value="c" />
+        </div>
+        <div class="second-row">
+          <input class="operator btn" type="button" name="+" value="+" />
+          <input class="operator btn" type="button" name="-" value="-" />
+        </div>
+        <div class="third-row">
+          <input class="operator btn" type="button" name="*" value="*" />
+          <input class="operator btn" type="button" name="/" value="/" />
+        </div>
+        <div class="fourth-row">
+          <input class="operator equal btn" type="button" name="=" value="=" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="App.js" charset="utf-8"></script>
+
+</body>
+
+</html>
