@@ -3,13 +3,12 @@ const operators = document.querySelectorAll(".operator");
 const input = document.querySelector("input");
 const output = document.querySelector("#output");
 
-let firstRun = true;
+const optionalNumbers = "1234567890";
+const signs = ["Backspace", "clear", "+", "-", "*", "/", "="];
+const dot = ".";
+const equalSign = "=";
 
-let isInputed = true;
-let optionalNumbers = "1234567890";
-let signs = ["Backspace", "clear", "+", "-", "*", "/", "="];
-let dot = ".";
-let equalSign = "=";
+let firstRun = true;
 let currentNumber = "";
 let currentOperator = "";
 let result = 0;
@@ -33,14 +32,14 @@ function keyHandler(key) {
 function setCurrents(operator) {
   if (operator !== equalSign) {
     currentOperator = operator;
-    if (isInputed) {
+    if (!isInputEmpty()) {
       if (isKeyLastInInput(input.value, dot)) {
         deleteLast();
       }
       currentNumber = input.value;
       setDefault();
     } else if (currentNumber === "") {
-      insert("0");
+      setInputToZero();
       setCurrents(operator);
     }
     setOutput();
@@ -50,6 +49,10 @@ function setCurrents(operator) {
     }
     setOutput(currentNumber, currentOperator, input.value);
   }
+}
+
+function setInputToZero() {
+  input.value = "0";
 }
 
 function isKeyLastInInput(input, key) {
@@ -64,7 +67,6 @@ function insertToInput(num) {
   if (firstRun) {
     clear();
     firstRun = false;
-    isInputed = true;
   }
 
   insert(num);
@@ -73,7 +75,6 @@ function insertToInput(num) {
 function insert(num) {
   if (validNumber(num)) {
     input.value += num;
-    isInputed = true;
   }
 }
 
@@ -192,18 +193,14 @@ function calculate() {
 
 function deleteLast() {
   input.value = input.value.slice(0, -1);
-  isInputed = !isInputEmpty();
 }
 
 function clear() {
   input.value = "";
-  isInputed = false;
 }
 
 function init() {
   firstRun = true;
-  isInputed = true;
-  equalSign = "=";
   currentNumber = "";
   currentOperator = "";
   result = 0;
@@ -219,7 +216,6 @@ function resetCurrents() {
 function setDefault() {
   firstRun = true;
   input.value = "";
-  isInputed = false;
 }
 
 function isValidOperation() {
