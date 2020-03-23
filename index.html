@@ -8,61 +8,61 @@
 </head>
 
 <body>
-
+  <h1 id="yardi"></h1>
   <div id="calculator">
 
-    <div class="calculate-section">
+    <div id="calculate-section">
       <h1 id="output"></h1>
     </div>
 
-    <div class="input-section">
-      <input type="text" name="inputArea" value="0" disabled>
+    <div id="input-section">
+      <input id="input" type="text" value="0" disabled>
     </div>
 
-    <div class="buttton-section">
-      <div class="numbers">
+    <div id="buttons-section">
+      <div id="numbers">
         <div class="first-row">
-          <input class="number btn" type="button" name="9" value="9" />
-          <input class="number btn" type="button" name="8" value="8" />
-          <input class="number btn" type="button" name="7" value="7" />
+          <input id="9" class="number button" type="button" onclick="classifyKey(id)" value="9" />
+          <input id="8" class="number button" type="button" onclick="classifyKey(id)" value="8" />
+          <input id="7" class="number button" type="button" onclick="classifyKey(id)" value="7" />
         </div>
         <div class="second-row">
-          <input class="number btn" type="button" name="6" value="6" />
-          <input class="number btn" type="button" name="5" value="5" />
-          <input class="number btn" type="button" name="4" value="4" />
+          <input id="6" class="number button" type="button" onclick="classifyKey(id)" value="6" />
+          <input id="5" class="number button" type="button" onclick="classifyKey(id)" value="5" />
+          <input id="4" class="number button" type="button" onclick="classifyKey(id)" value="4" />
         </div>
         <div class="third-row">
-          <input class="number btn" type="button" name="3" value="3" />
-          <input class="number btn" type="button" name="2" value="2" />
-          <input class="number btn" type="button" name="1" value="1" />
+          <input id="3" class="number button" type="button" onclick="classifyKey(id)" value="3" />
+          <input id="2" class="number button" type="button" onclick="classifyKey(id)" value="2" />
+          <input id="1" class="number button" type="button" onclick="classifyKey(id)" value="1" />
         </div>
         <div class="fourth-row">
-          <input class="number zero btn" type="button" name="0" value="0" />
-          <input class="number dot btn" type="button" name="." value="." />
+          <input id="0" class="number button bottom" type="button" onclick="classifyKey(id)" value="0" />
+          <input id="." class="number button" type="button" onclick="classifyKey(id)" value="." />
         </div>
       </div>
-      <div class="operators">
+      <div id="operators">
         <div class="first-row">
-          <input class="operator btn" type="button" name="Backspace" value="<-" />
-          <input class="operator btn" type="button" name="clear" value="c" />
+          <input id="Backspace" class="operator button" type="button" onclick="classifyKey(id)" value="&larr;" />
+          <input id="Clear" class="button" type="button" onclick="classifyKey(id)" value="C" />
         </div>
         <div class="second-row">
-          <input class="operator btn" type="button" name="+" value="+" />
-          <input class="operator btn" type="button" name="-" value="-" />
+          <input id="+" class="operator button" type="button" onclick="classifyKey(id)" value="+" />
+          <input id="-" class="operator button" type="button" onclick="classifyKey(id)" value="-" />
         </div>
         <div class="third-row">
-          <input class="operator btn" type="button" name="*" value="*" />
-          <input class="operator btn" type="button" name="/" value="/" />
+          <input id="*" class="operator button" type="button" onclick="classifyKey(id)" value="*" />
+          <input id="/" class="operator button" type="button" onclick="classifyKey(id)" value="/" />
         </div>
         <div class="fourth-row">
-          <input class="operator equal btn" type="button" name="=" value="=" />
+          <input id="=" class="operator button bottom" type="button" onclick="classifyKey(id)" value="=" />
         </div>
       </div>
     </div>
 
   </div>
 
-  <script src="App.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
 
 </body>
 

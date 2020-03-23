@@ -1,5 +1,5 @@
-body {
-  margin: 5px;
+#calculator {
+  margin: auto;
   border: 1px solid;
   padding: 5px;
   width: 300px;
@@ -8,18 +8,18 @@ body {
   font-style: normal;
 }
 
-.calculate-section {
+#calculate-section {
   background-color: #ff4c68;
-  height: 100px;
+  height: 25%;
 }
 
-.input-section {
+#input-section {
   border: 1px solid;
   margin: 5px 1px;
-  height: 50px;
+  height: 15%;
 }
 
-.input-section>input {
+#input {
   width: 99%;
   height: 88%;
   background-color: #fff;
@@ -27,19 +27,19 @@ body {
   color: #000;
 }
 
-.button-section {
-  height: 350px;
+#buttons-section {
+  height: 60%;
 }
 
-.operators {
+#operators {
   float: right;
 }
 
-.numbers {
+#numbers {
   float: left;
 }
 
-.btn {
+.button {
   background-color: #ff4c68;
   margin: 1px;
   border: 1px solid;
@@ -48,10 +48,18 @@ body {
   border-radius: 100%;
 }
 
-.btn:focus {
+.button:focus {
   outline: none;
 }
 
-.zero, .equal {
-  width: 106px;
+.button:hover {
+  background-color: #a35f69;
+}
+
+.button:disabled {
+  background-color: #a35f69;
+}
+
+.bottom {
+  width: 105px;
 }
