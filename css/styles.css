@@ -8,38 +8,38 @@
   font-style: normal;
 }
 
-#calculate-section {
+#calculate_section {
   background-color: #ff4c68;
   height: 25%;
 }
 
-#input-section {
+#number_insert_section {
   border: 1px solid;
   margin: 5px 1px;
   height: 15%;
 }
 
-#input {
+#number_insert_field {
   width: 99%;
   height: 88%;
-  background-color: #fff;
-  font-size: 25pt;
-  color: #000;
+  background-color: white;
+  font-size: 50px;
+  color: black;
 }
 
-#buttons-section {
+#enumerators_section {
   height: 60%;
 }
 
-#operators {
+#operators_section {
   float: right;
 }
 
-#numbers {
+#numbers_section {
   float: left;
 }
 
-.button {
+.enumerator {
   background-color: #ff4c68;
   margin: 1px;
   border: 1px solid;
@@ -48,18 +48,18 @@
   border-radius: 100%;
 }
 
-.button:focus {
+.enumerator:focus {
   outline: none;
 }
 
-.button:hover {
+.enumerator:hover {
   background-color: #a35f69;
 }
 
-.button:disabled {
+.enumerator:disabled {
   background-color: #a35f69;
 }
 
-.bottom {
+.double-size {
   width: 105px;
 }
