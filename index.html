@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -65,3 +66,72 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script async src="index.js" charset="utf-8"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div id="calculator">
+
+    <div id="calculate_section">
+      <h1 id="calculate_display"></h1>
+    </div>
+
+    <div id="number_insert_section">
+      <input id="number_insert_field" type="text" max="16" value="0" disabled>
+    </div>
+
+    <div id="enumerators_section">
+      <div id="numbers_section">
+        <div class="first-row">
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="9" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="8" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="7" />
+        </div>
+        <div class="second-row">
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="6" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="5" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="4" />
+        </div>
+        <div class="third-row">
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="3" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="2" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="1" />
+        </div>
+        <div class="fourth-row">
+          <input class="number enumerator double-size" type="button" onclick="setNumberInsertField(value)" value="0" />
+          <input class="number enumerator" type="button" onclick="setNumberInsertField(value)" value="." />
+        </div>
+      </div>
+      <div id="operators_section">
+        <div class="first-row">
+          <input class="operator enumerator" type="button" onclick="CALCULATOR_FUNCTIONS['Backspace']()" value="&larr;" />
+          <input class="enumerator" type="button" onclick="CALCULATOR_FUNCTIONS['Clear']()" value="C" />
+        </div>
+        <div class="second-row">
+          <input class="operator enumerator" type="button" onclick="CALCULATOR_FUNCTIONS[value]()" value="+" />
+          <input class="operator enumerator" type="button" onclick="CALCULATOR_FUNCTIONS[value]()" value="-" />
+        </div>
+        <div class="third-row">
+          <input class="operator enumerator" type="button" onclick="CALCULATOR_FUNCTIONS[value]()" value="*" />
+          <input class="operator enumerator" type="button" onclick="CALCULATOR_FUNCTIONS[value]()" value="/" />
+        </div>
+        <div class="fourth-row">
+          <input class="operator enumerator double-size" type="button" onclick="CALCULATOR_FUNCTIONS[value]()" value="=" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+>>>>>>> d3cb6ed0e3272265e6d0648a2e028d12b2594c13
