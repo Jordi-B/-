@@ -35,6 +35,8 @@ let currentNumber;
 let currentOperator = '';
 let result;
 
+console.log(3 + 3 * 3);
+
 document.addEventListener('keydown', function() {
   const KEYBOARD_KEY = event.key;
   if (isNumberOrDot(KEYBOARD_KEY)) {
