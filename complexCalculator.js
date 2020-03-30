@@ -2,7 +2,6 @@
 
 let numberInsertField = document.getElementById('number_insert_field');
 let calculateDisplay = document.getElementById('calculate_display');
-let functionalityButtons = document.getElementsByClassName('operator');
 
 const CALCULATOR_FUNCTIONS = {
   'Backspace': () => deleteLastInNumberInsertField(),
@@ -197,7 +196,7 @@ function resetCalculateArrays() {
 function init() {
   resetCalculateArrays();
   resetNumberInsertField();
-  calculateDisplay.textContent = '';
+  calculateDisplay.textContent = EMPTY_STRING;
   isEqualSignTriggered = false;
 }
 
